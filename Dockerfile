@@ -1,14 +1,13 @@
-FROM node:12.22.9
+FROM node:12.22.9-alpine3.15
 
 # Environment variables
-ENV DEBIAN_FRONTEND noninteractive
 ENV HUBOT_SLACK_TOKEN xxxxxx
 ENV HUBOT_NAME myhubot
 ENV HUBOT_OWNER none
 ENV HUBOT_DESCRIPTION Hubot
 ENV EXTERNAL_SCRIPTS "hubot-help,hubot-pushbot"
 
-RUN useradd hubot -m
+RUN adduser --disabled-password hubot
 
 RUN npm install -g hubot coffeescript yo generator-hubot
 

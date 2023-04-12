@@ -1,7 +1,7 @@
 hubot-slack
 ==============
 
-This is a docker image repo for hubot running with a [hubot-slack](https://github.com/slackhq/hubot-slack) adapter.
+This is a docker image repo for hubot push train running with a [hubot-slack](https://github.com/slackhq/hubot-slack) adapter.
 
 # Acknowledgements
 
